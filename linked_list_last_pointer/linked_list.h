@@ -19,5 +19,6 @@ Element list_get(LinkedList *list, int position);
 int list_size(LinkedList *list);
 bool list_isEmpty(LinkedList *list);
 void list_print(LinkedList *list);
+void list_printElements(LinkedList* l1, LinkedList* l2);
 
 #endif

@@ -89,8 +89,50 @@ void test_removeAt() {
 }
 
 int main() {
-    // test_removeFirst();
-    test_removeAt();
+
+    LinkedList* list = list_create();
+    
+    list_insertFirst(list, 40);
+    list_insertFirst(list, 30);
+    list_insertFirst(list, 20);
+    list_insertFirst(list, 10);
+  
+
+    LinkedList* list2 = list_create();
+
+    list_insertFirst(list2, 1);
+    list_insertFirst(list2, 2);
+    list_insertFirst(list2, 3);
+
+    LinkedList* list3 = list_create();
+    
+    list_insertFirst(list3, 10);
+    list_insertFirst(list3, 20);
+    list_insertFirst(list3, 40);
+    list_insertFirst(list3, 3);
+    list_insertFirst(list3, 20);
+    list_insertFirst(list3, 10);
+    list_insertFirst(list3, 3);
+
+
+
+    list_print(list);
+    list_print(list2);
+
+    list_printElements(list, list2);
+    printf("\n");
+
+    int o = list_isSorted(list2);
+    printf("%d",o);
+    printf("\n");
+
+    list_printReverse(list);    
+    printf("\n");
+
+    reverse(list);
+    printf("\n");
+
+    list_removeDuplicates(list3);
 
     return 0;
 }

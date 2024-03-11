@@ -202,3 +202,6 @@ void list_print(LinkedList *list) {
 
     printf("\n");
 }
+
+
+// Exercicios 

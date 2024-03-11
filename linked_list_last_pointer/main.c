@@ -128,17 +128,21 @@ void test_insertExtremities() {
 }
 
 int main() {
-    test_insert();
-    printf("\n");
-    test_removeFirst();
-    printf("\n");
-    test_removeAt();
-    printf("\n");
-    test_insertLast();
-    printf("\n");
-    test_insertFirst();
-    printf("\n");
-    test_insertExtremities();
+
+    LinkedList* list = list_create();
+
+    list_insertFirst(list, 10);
+    list_insertFirst(list, 20);
+    list_insertFirst(list, 30);
+
+    LinkedList* list2 = list_create();
+
+    list_insertFirst(list2, 0);
+    list_insertLast(list2, 1);
+
+
+
+    list_printElements(list, list2);
 
     return 0;
 }
